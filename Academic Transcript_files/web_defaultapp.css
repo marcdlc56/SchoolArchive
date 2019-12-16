@@ -1,0 +1,484 @@
+/* *****************************************************************************
+    BODY
+***************************************************************************** */
+body, html {
+  background-color: white;
+  font-family: arial, helvetica;
+  color: #333333;
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/* *****************************************************************************
+    DIVIDES
+***************************************************************************** */
+div.headerwrapperdiv {
+  margin-left: 0px;
+  margin-top: 0px; }
+
+div.pageheaderdiv1 {
+  margin-top: 0px;
+  margin-left: 0px;
+  border: none; }
+
+div.pageheaderdiv2 {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  font-weight: bold; }
+
+div.headerlinksdiv {
+  margin-right: 0; }
+
+div.bodylinksdiv {
+  text-align: center;
+  margin-top: .5em; }
+
+div.footerlinksdiv {
+  text-align: center; }
+
+div.backlinkdiv {
+  text-align: right; }
+
+div.previewdiv {
+  text-align: center; }
+
+div.validationdiv {
+  text-align: center; }
+
+div.staticheaders {
+  text-align: right;
+  font-size: .9em; }
+
+/* *****************************************************************************
+  HEADERS
+***************************************************************************** */
+/* *****************************************************************************
+  Horizontal Rule for Menu Section
+***************************************************************************** */
+/* *****************************************************************************
+  TEXT CLASSES
+***************************************************************************** */
+.centeraligntext {
+  text-align: center; }
+
+.leftaligntext {
+  text-align: left; }
+
+.rightaligntext {
+  text-align: right; }
+
+.menulisttext {
+  list-style: none; }
+
+.captiontext {
+  font-weight: bold;
+  font-style: italic;
+  text-align: left;
+  margin: .5em 0; }
+
+.skiplinks {
+  display: none; }
+
+.pageheaderlinks {
+  color: #ffffff;
+  text-align: center; }
+
+.requirementnotmet {
+  color: red; }
+
+/* *****************************************************************************
+    SUB_MENU ITEMS
+***************************************************************************** */
+.pageheaderlinks2 {
+  color: #677617;
+  text-align: justify; }
+
+.pagebodylinks {
+  color: #456c88;
+  text-align: center; }
+
+.gotoanchorlinks {
+  color: #456c88; }
+
+.pagefooterlinks {
+  color: #456c88;
+  text-align: center; }
+
+.backlinktext {
+  color: #456c88;
+  text-align: right; }
+
+.menulinktext {
+  color: #456c88;
+  font-weight: bold; }
+
+.menulinkdesctext {
+  display: block;
+  padding: 0;
+  padding-top: .25em;
+  padding-bottom: .25em;
+  font-size: .95em; }
+
+.normaltext {
+  font-family: arial, helvetica;
+  font-size: 14px; }
+
+.errortext {
+  color: red;
+  font-weight: bold; }
+
+.warningtext {
+  color: gold;
+  font-weight: bold; }
+
+.releasetext {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: .8em; }
+
+.fieldlabeltext {
+  font-weight: bold; }
+
+.fieldlabeltextinvisible {
+  display: none; }
+
+.fieldformatboldtext {
+  font-weight: bold; }
+
+.fielderrortext {
+  color: red; }
+
+.fieldsmallboldtext {
+  font-weight: bold;
+  font-size: .8em; }
+
+.fieldsmalltext {
+  font-size: .8em; }
+
+.fieldmediumtext {
+  font-size: .9em; }
+
+.fieldlargetext {
+  font-weight: bold;
+  font-size: 1.1em; }
+
+.fieldmediumtextbold {
+  font-weight: bold;
+  font-size: .9em; }
+
+.fieldorangetextbold {
+  color: ffa500;
+  font-weight: bold; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .menulinkdesctext {
+    width: auto;
+    float: none; } }
+/* *****************************************************************************
+    ANCHORS (LINKS)
+***************************************************************************** */
+a {
+  color: #456c88; }
+
+/* ANCHOR Definitions for Home Page MenuItems class.        */
+/* ======================================================== */
+a.menulinktext {
+  font-weight: bold; }
+
+a.submenulinktext {
+  font-weight: bold;
+  text-decoration: none; }
+
+/*a.submenulinktext2 + br {
+  display: none;
+}*/
+a.whitespacelink {
+  line-height: 200%;
+  text-decoration: underline; }
+
+a.largelinktext {
+  font-weight: bold;
+  font-size: 1.1em; }
+
+a.sitemaplevel1 {
+  font-weight: bold; }
+
+a.sitemaplevel2 {
+  font-size: .9em; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  a.submenulinktext2 {
+    width: auto;
+    float: none;
+    text-align: left;
+    padding: 0; } }
+/* ANCHOR Definitions for Home Page MenuItems class.        */
+/* ======================================================== */
+a.whitespacelink {
+  line-height: 200%; }
+
+a.largelinktext {
+  font-weight: bold;
+  font-size: 1.2em; }
+
+.whitespace1 {
+  padding-top: 0em; }
+
+.whitespace2 {
+  padding-top: 1em; }
+
+.whitespace3 {
+  padding-top: 2em; }
+
+.whitespace4 {
+  padding-top: 3em; }
+
+/* *****************************************************************************
+    FORM CONTROLS
+***************************************************************************** */
+input {
+  background-color: #ffffff; }
+
+label {
+  font-weight: bold; }
+
+table,
+table.dataentrytable,
+table.datadisplaytable,
+table.plaintable,
+table.menuplaintable,
+table.bordertable {
+  border: 0px;
+  border-collapse: separate;
+  border-spacing: 2px; }
+
+table th,
+table td {
+  vertical-align: top; }
+
+td > p {
+  margin: 0; }
+
+table.pageheadertable {
+  margin-top: 0px; }
+
+table.colorsampletable {
+  background-color: #FFFFFF; }
+
+.pageheadertablecell {
+  text-align: left; }
+
+.pageheadernavlinkstablecell {
+  text-align: right; }
+
+table td.plheadermenulinks {
+  font-weight: normal;
+  background-color: #FFFFCC; }
+
+/* *****************************************************************************
+    DATA ENTRY TABLE HEADERS AND DATA CELLS
+***************************************************************************** */
+table.dataentrytable {
+  border: none; }
+
+table.dataentrytable td, table.dataentrytable th {
+  vertical-align: top; }
+
+table td.deheader,
+table th.deheader {
+  background-color: #f9fafb;
+  font-weight: bold; }
+
+table td.detitle,
+table th.detitle {
+  background-color: #f9fafb;
+  font-weight: bold;
+  padding-bottom: 1em; }
+
+table td.delabel,
+table th.delabel {
+  background-color: rgba(204, 204, 204, 0.5);
+  /* rlj 5/29/09 change to UVU color was FFFFDF */
+  font-weight: bold; }
+
+table td.deborder {
+  border: 1px solid; }
+
+/* *****************************************************************************
+    DATA DISPLAY TABLE HEADERS AND DATA CELLS
+***************************************************************************** */
+table.datadisplaytable {
+  border: none; }
+
+table.datadisplaytable td, table.datadisplaytable th {
+  vertical-align: top;
+  text-align: left; }
+
+table td.ddheader,
+table th.ddheader {
+  background-color: #f9fafb;
+  font-weight: bold; }
+
+table td.ddtitle,
+table th.ddtitle {
+  background-color: #f9fafb;
+  font-weight: bold;
+  padding-bottom: 1em; }
+
+table td.ddlabel,
+table th.ddlabel {
+  background-color: rgba(204, 204, 204, 0.5);
+  /* rlj 5/29/09 change to UVU color was FFFFDF */
+  font-weight: bold; }
+
+/* *****************************************************************************
+    PLAIN TABLE HEADERS AND DATA CELLS
+***************************************************************************** */
+table.plaintable {
+  border: none;
+  border-spacing: 0; }
+
+table td.pltitle,
+table td.plheader,
+table th.pllabel {
+  font-weight: bold; }
+
+/* *****************************************************************************
+    MENU PLAIN TABLE HEADERS AND DATA CELLS
+***************************************************************************** */
+table.menuplaintable {
+  border: none; }
+
+table.menuplaintable td, table.menuplaintable th {
+  vertical-align: top;
+  padding: .15em 0;
+  text-align: left; }
+
+table td.mptitle,
+table td.mpheader,
+table th.mplabel {
+  font-weight: bold; }
+
+/* *****************************************************************************
+    Define tables with border
+***************************************************************************** */
+table.bordertable {
+  border-collapse: collapse;
+  border: 1px solid; }
+
+table.bordertable td, table.bordertable th {
+  vertical-align: top;
+  border: 1px solid;
+  text-align: left; }
+
+table td.dbheader,
+table th.dbheader {
+  background-color: #ffffdf;
+  font-weight: bold; }
+
+table td.dbtitle,
+table th.dbtitle {
+  background-color: #ffffdf;
+  font-weight: bold;
+  padding-bottom: 1em; }
+
+table td.dblabel,
+table th.dblabel {
+  background-color: #ffffdf;
+  font-weight: bold; }
+
+/* *****************************************************************************
+    NON TABULAR TABLE DATA DISPLAY  HEADERS AND DATA CELLS
+***************************************************************************** */
+table td.ntheader,
+table th.ntheader {
+  background-color: #ffffdf;
+  font-weight: bold;
+  text-align: left; }
+
+table td.nttitle,
+table th.nttitle {
+  background-color: #ffffdf;
+  font-weight: bold;
+  padding-bottom: 1em; }
+
+table td.ntlabel,
+table th.ntlabel {
+  background-color: #ffffdf;
+  font-weight: bold; }
+
+/*
+New Tab styles for Self Service
+*/
+.bgtabon {
+  background-color: #4c721d;
+  /* rlj 5/29/09 change to UVU color was 146B36 */ }
+
+.bgtaboff {
+  background-color: #ddd3af;
+  /* rlj 5/29/09 change to UVU color was FFFFCC */ }
+
+.texttabon {
+  color: white; }
+
+.texttaboff {
+  color: #333333; }
+
+.tabon {
+  padding-left: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  background-image: url(/wtlgifs/web_tab_corner.gif);
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-color: #4c721d;
+  /* rlj 5/29/09 change to UVU color was 146B36 */ }
+
+.tabon a:link, .tabon a:visited, .tabon a:active, .tabon a:hover {
+  color: white;
+  text-decoration: none; }
+
+.taboff {
+  padding-left: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  background-image: url(/wtlgifs/web_tab_corner.gif);
+  color: #000000;
+  background-repeat: no-repeat;
+  background-color: #ddd3af;
+  /* rlj 5/29/09 change to UVU color was FFFFCC */ }
+
+.taboff a:link, .taboff a:visited, .taboff a:active, .taboff a:hover {
+  color: #333333;
+  text-decoration: none; }
+
+/* 80100-1 */
+.tabdisable {
+  padding-left: 8px;
+  font-weight: bold;
+  font-size: 12px;
+  background-image: url(/wtlgifs/web_tab_corner.gif);
+  color: #f2f2f2;
+  background-repeat: no-repeat;
+  background-color: #cccccc; }
+
+.tabdisable a:link,
+.tabdisable a:visited,
+.tabdisable a:active,
+.tabdisable a:hover {
+  color: #f2f2f2;
+  text-decoration: none; }
+
+.bg3 {
+  background-color: #4c721d; }

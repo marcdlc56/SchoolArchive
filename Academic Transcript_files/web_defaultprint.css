@@ -1,0 +1,103 @@
+/* *****************************************************************************
+    BODY
+***************************************************************************** */
+body, html {
+  background-color: white;
+  font-family: arial, helvetica;
+  color: #333333;
+  margin: 0; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+/* *****************************************************************************
+    DIVIDES
+***************************************************************************** */
+div.headerwrapperdiv {
+  margin-left: 0px;
+  margin-top: 0px; }
+
+div.pageheaderdiv1 {
+  margin-top: 0px;
+  margin-left: 0px;
+  border: none; }
+
+div.pageheaderdiv2 {
+  text-align: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  font-weight: bold; }
+
+div.headerlinksdiv {
+  margin-right: 0; }
+
+div.bodylinksdiv {
+  text-align: center;
+  margin-top: .5em; }
+
+div.footerlinksdiv {
+  text-align: center; }
+
+div.backlinkdiv {
+  text-align: right; }
+
+div.previewdiv {
+  text-align: center; }
+
+div.validationdiv {
+  text-align: center; }
+
+div.staticheaders {
+  text-align: right;
+  font-size: .9em; }
+
+/* *****************************************************************************
+  HEADERS
+***************************************************************************** */
+/* *****************************************************************************
+  Horizontal Rule for Menu Section
+***************************************************************************** */
+@media print {
+  .no-print {
+    display: none; }
+
+  #header-main-section {
+    display: none; }
+
+  #breadcrumb-panel {
+    display: none; }
+
+  #outerFooter {
+    display: none; }
+
+  #banner8Footer {
+    display: none; }
+
+  #back_url_wrapper {
+    display: none; }
+
+  body {
+    overflow-y: auto !important; }
+
+  html, body {
+    height: auto;
+    width: auto;
+    overflow: visible !important; }
+
+  #content {
+    position: relative;
+    top: 0 !important;
+    bottom: auto !important;
+    overflow: visible !important; }
+
+  #innerContent {
+    padding: 0; } }

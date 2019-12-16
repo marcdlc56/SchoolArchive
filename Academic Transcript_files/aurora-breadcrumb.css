@@ -1,0 +1,139 @@
+/*******************************************************************************
+ Copyright 2015 Ellucian Company L.P. and its affiliates.
+*******************************************************************************/
+
+#breadcrumb-panel{
+    height: 4.1015625%;
+    clear: both;
+    min-height: 2.4em;
+    position: relative;
+}
+
+a.breadcrumbButton:link, a.breadcrumbButton:active, a.breadcrumbButton:visited , .breadcrumbButton {
+    color: #41566F;
+    font-size: 1.2em;
+}
+
+a.breadcrumbButton{
+    text-decoration: underline;
+}
+
+#title-panel{
+    height: 5.25%;
+    color : #557287;
+    min-height: 2.8em;
+    position: relative;
+    display:block;
+    width:100%;
+}
+
+#breadcrumb-panel #breadcrumbHeader, #breadcrumbBackButton, #breadcrumbPageTitle {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#breadcrumb-panel, #title-panel{
+    background-color: #F9FAFB;
+    border-bottom: 2px solid #DEE5E7;
+    font-family: "Open Sans";
+    padding-left: 1%;
+}
+
+#title-panel h1{
+    font-weight: 500;
+    height:100%;
+    display:table-cell;
+    vertical-align: middle;
+    font-size:1.75em;
+    font-family: "Open Sans";
+}
+
+#breadcrumbBackButton, #breadcrumbPageTitle{
+    display: none;
+}
+
+#breadcrumbPageTitle, #title-panel{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.breadcrumb-separator{
+    content: '';
+    background: url("images/breadcrumb-separator.svg") no-repeat center;
+    width: 0.5em;
+    height: 0.5em;
+    padding-left: 1%;
+    padding-right: 1%;
+    display: inline-block;
+}
+
+.breadcrumb-separator:last-of-type{
+    display:none;
+}
+
+.page-title-separator{
+    border-bottom: 2px solid #DEE5E7;
+}
+
+#breadcrumbBackButton {
+    background: url("images/icon-arrow-back-left.svg") no-repeat center;
+}
+
+/*Mobile device*/
+
+@media only screen
+and (min-width: 0px)
+and (max-width: 767px) {
+
+    #breadcrumb-panel{
+        height: 4.6338028169014086%;
+        padding-left: 0.5em;
+        color: #41566F;
+        min-height: 2.8em;
+    }
+
+    #breadcrumbBackButton{
+        position:relative;
+        height: 2.8em;
+        width: 1.5em;
+        float: left;
+        margin-right: 0.5em;
+        cursor: pointer;
+    }
+
+    #breadcrumbHeader, #breadcrumbPageTitle {
+        font-size: 1em;
+    }
+
+    .breadcrumbButton, #title-panel, .breadcrumb-separator{
+        display:none;
+        height: 0;
+        min-height: 0;
+    }
+
+    #breadcrumbBackButton, #breadcrumbPageTitle, .breadcrumb-show-leaf .leaf-breadcrumb{
+        display: block;
+    }
+
+    #breadcrumbHeader:before{
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    .breadcrumb-show-leaf .leaf-breadcrumb {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #breadcrumb-panel #breadcrumbHeader{
+        position: static;
+        transform: inherit;
+    }
+}
+

@@ -1,0 +1,169 @@
+/*********************************************************************************
+ Copyright 2015 Ellucian Company L.P. and its affiliates.
+ **********************************************************************************/
+
+#menuContainer{
+    height:90%;
+    display:none;
+    min-width:27%;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 1px #000000;
+    float:left;
+    position:fixed;
+    opacity: .99;
+    z-index: 999;
+    overflow-y:auto;
+}
+
+#menu   {
+    height:100%;
+    width:100%;
+}
+
+#bannerMenuDiv, #bannerMenu{
+    height: inherit;
+}
+
+.menu-wrapper.hide,#menuContainer.hide {
+    display:none;
+}
+
+.menu-wrapper.show, #menuContainer.show{
+    display:block;
+}
+
+.menu-wrapper {
+    background-color: #ffffff;
+}
+
+
+#bannerMenu.show:after
+{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+    width: 0px;
+    border-bottom: 9px solid #ffffff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+#menu ul {
+    list-style-type: none;
+    -webkit-padding-start: 0px;
+    -webkit-margin-before: 0em;
+    height:100%;
+    margin-top:0px;
+    margin:0px;
+    padding:0px;
+}
+
+#menu ul>li {
+    border-bottom: 1px solid #D0DBDE;
+}
+
+.menu-item  {
+    height:inherit;
+    position: relative;
+    display: block;
+    padding: 0.5em;
+}
+
+#menu .menu-text    {
+    display: inline-block;
+}
+
+#menu .menu-text, #menu .menu-subheader-text{
+    letter-spacing: 2px;
+    font-size: 1em;
+    color: #41566F;
+    font-family:"Open Sans";
+}
+
+#menu .menu-subheader-text  {
+    margin-left:6%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+#menu .menu-leaf-node{
+    white-space:nowrap;
+}
+#menu ul li:hover, #menu ul li:focus{
+    background-color: #F3FCFF;
+    cursor:pointer;
+}
+
+#menu .menu-icon    {
+    background:url(images/arrow-right.svg) no-repeat center;
+    float:right;
+    margin-right: 0.5em ;
+    display: inline-block;
+}
+
+#menu .menu-back-icon    {
+    background:url(images/arrow-left.svg) no-repeat center center;
+    float:left;
+}
+
+#menu .menu-icon, #menu .menu-back-icon{
+    background-size: 0.625em 1.125em;
+    height:1.125em;
+    width:0.625em;
+}
+
+.menu-wrapper a:link,.menu-wrapper a:visited,.menu-wrapper a:hover,.menu-wrapper a:active {
+    margin:0px;
+    padding:0px;
+    text-decoration: none;
+    color: #41566F;
+}
+
+/** Mobile **/
+@media only screen
+and (min-width:0px)
+and (max-width:767px){
+    #menuContainer   {
+        height: 90%;
+    }
+
+    .menu-item{
+        white-space: normal;
+    }
+    #menu .menu-back-icon, #menu .menu-icon {
+        background-size:0.625em 0.9em;
+        height:0.9em;
+        padding-top:0.5em;
+    }
+}
+
+@media only screen
+and (min-width:0px)
+and (max-width:767px)
+and (orientation : landscape)   {
+    #menuContainer   {
+        min-width:50%;
+    }
+}
+
+@media only screen
+and (min-width:0px)
+and (max-width:767px)
+and (orientation : portrait)   {
+    #menuContainer   {
+        width: 100%;
+    }
+}
+
+/*** Tablet ***/
+@media only screen
+and (min-width:768px)
+and (max-width:1024px){
+    #menuContainer   {
+        height: 90%;
+        min-width:40%;
+    }
+}

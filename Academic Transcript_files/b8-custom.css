@@ -1,0 +1,786 @@
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-theme.css
+*******************************************************************************/
+.aurora-theme {
+  font-family: arial, helvetica !important; }
+
+/*******************************************************************************
+	plugin: sghe_aurora
+	file: web-app/css/common-controls.css
+*******************************************************************************/
+#outerFooter {
+  height: 40px;
+  background: #696158;
+  font-family: arial, helvetica;
+  font-size: 14px; }
+
+.footerBrandingLogo {
+  background: transparent url("images/logos/monogram-white-32h.svg") no-repeat center center;
+  background-size: 46px 14px;
+  width: 46px;
+  height: 14px;
+  padding: 0;
+  float: none;
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  cursor: default; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .footerBrandingLogo {
+    background-size: 46px 14px;
+    width: 46px;
+    height: 14px;
+    top: 13px;
+    right: 10px; } }
+/*******************************************************************************
+	plugin: sghe_aurora
+	file: web-app/css/common-platform.css
+*******************************************************************************/
+html {
+  font-family: arial, helvetica;
+  font-size: 14px; }
+
+#content {
+  bottom: 40px; }
+
+/*******************************************************************************
+	plugin: sghe_aurora
+	file: web-app/css/common-platform.css
+*******************************************************************************/
+#content {
+  top: 6.2em; }
+
+#content.breadcrumb-1, #content.breadcrumb-0 {
+  top: 3.4em; }
+
+/*******************************************************************************
+  custom
+*******************************************************************************/
+@media only screen and (min-height: 1000px) {
+  #content {
+    top: 7.1em; }
+
+  #content.breadcrumb-1, #content.breadcrumb-0 {
+    top: 4.3em; } }
+@media only screen and (min-height: 1200px) {
+  #content {
+    top: 8em; }
+
+  #content.breadcrumb-1, #content.breadcrumb-0 {
+    top: 5.2em; } }
+@media only screen and (min-height: 1400px) {
+  #content {
+    top: 8.8em; }
+
+  #content.breadcrumb-1, #content.breadcrumb-0 {
+    top: 6em; } }
+@media only screen and (min-height: 1600px) {
+  #content {
+    top: 9.7em; }
+
+  #content.breadcrumb-1, #content.breadcrumb-0 {
+    top: 6.9em; } }
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-header.css
+*******************************************************************************/
+#header-main-section {
+  background-color: #245d38;
+  height: 3.4em;
+  min-height: 3.4em; }
+
+#header-main-section-east-part {
+  background-color: #2b6f43;
+  padding-left: .75em;
+  padding-right: .75em; }
+
+#header-main-section-east-part #mepDiv {
+  border-left: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#header-main-section-east-part #signInButton {
+  border: none; }
+
+#header-main-section-east-part #userDiv {
+  border: none;
+  margin-right: 0; }
+
+#header-main-section-east-part #username {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0 .25em 0 .75em; }
+
+#header-main-section-east-part #toolsButton {
+  border: none; }
+
+#header-main-section-east-part #notification-center {
+  margin-left: 0;
+  margin-right: -.75em; }
+
+#bannerMenu {
+  background: #2b6f43 url("images/icons/bars.svg") center center no-repeat;
+  background-size: 19px 16px;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em; }
+
+.institutionalBranding {
+  background: url("images/branding.svg") left center no-repeat;
+  width: 250px;
+  background-size: 250px;
+  margin-left: 0; }
+
+#user {
+  width: 2.37em;
+  margin: 0;
+  background-size: 24px; }
+
+.notification-center {
+  color: #333333; }
+
+.notification-center-count {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 1em; }
+
+.notification-center-anchor {
+  background-color: #e1b500; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #header-main-section {
+    height: 3.4em;
+    min-height: 3.4em;
+    display: block; }
+
+  #header-main-section-east-part {
+    padding-left: 0;
+    padding-right: 0; }
+
+  #header-main-section-east-part #notification-center {
+    margin-left: 0.5em; }
+
+  .institutionalBranding {
+    background-size: 140px;
+    width: 140px; }
+
+  #user {
+    width: 2.5em; }
+
+  .notification-center-anchor {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #header-main-section {
+    display: block; }
+
+  .institutionalBranding {
+    width: 250px;
+    background-size: 250px; }
+
+  #header-main-section-east-part #username {
+    font: 1em "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+  #header-main-section-east-part #toolsButton {
+    border: none; }
+
+  #header-main-section-east-part #userDiv {
+    border: none;
+    background-color: transparent; }
+
+  #header-main-section-east-part #notification-center {
+    margin-left: 0;
+    margin-right: 0; }
+
+  .notification-center-count {
+    font-size: 1em; } }
+/*******************************************************************************
+  custom
+*******************************************************************************/
+#brandingDiv {
+  padding-left: 1em; }
+
+@media only screen and (min-height: 1000px) {
+  #header-main-section {
+    height: 4.3em; } }
+@media only screen and (min-height: 1200px) {
+  #header-main-section {
+    height: 5.2em; } }
+@media only screen and (min-height: 1400px) {
+  #header-main-section {
+    height: 6em; } }
+@media only screen and (min-height: 1600px) {
+  #header-main-section {
+    height: 6.9em; } }
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-header.css
+*******************************************************************************/
+.institutionalBrandingREMOVED {
+  display: none; }
+#branding_text_header {
+  display: none; }
+
+#header-main-section-west-part #bannerMenuDiv {
+  float: none; }
+
+#brandingDiv {
+  line-height: 3.4em; }
+
+#branding_text {
+  font-family: stratum-1-web, proxima-nova-soft, arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: white; }
+
+#db_environment {
+  color: yellow; }
+
+#db_created {
+  color: yellow; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #branding_text {
+    font-size: 18px; }
+
+  #db_created {
+    display: none; }
+
+  #back_url_wrapper {
+    display: none; } }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  #db_created {
+    display: none; } }
+@media only screen and (min-height: 1000px) {
+  #brandingDiv {
+    line-height: 4.3em; } }
+@media only screen and (min-height: 1200px) {
+  #brandingDiv {
+    line-height: 5.2em; } }
+@media only screen and (min-height: 1400px) {
+  #brandingDiv {
+    line-height: 6em; } }
+@media only screen and (min-height: 1600px) {
+  #brandingDiv {
+    line-height: 6.9em; } }
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-breadcrumb.css
+*******************************************************************************/
+#breadcrumb-panel {
+  height: 2.8em;
+  min-height: 2.8em; }
+
+a.breadcrumbButton:link
+, a.breadcrumbButton:active
+, a.breadcrumbButton:visited
+, .breadcrumbButton {
+  color: #456c88;
+  font-size: 1em;
+  text-decoration: none; }
+
+a.breadcrumbButton {
+  text-decoration: none; }
+
+#title-panel {
+  color: #333333;
+  height: auto;
+  min-height: auto; }
+
+#breadcrumb-panel
+, #title-panel {
+  background-color: #f2f2f2;
+  border: none;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !important; }
+
+#title-panel h1 {
+  font-family: stratum-1-web, proxima-nova-soft, arial, sans-serif;
+  font-size: 24px;
+  padding: .5em 0;
+  margin: 0; }
+
+.breadcrumb-separator {
+  background: none;
+  display: inline; }
+
+.page-title-separator {
+  border-bottom-color: #e6e6e6; }
+
+#breadcrumbBackButton {
+  background-size: 1em; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #breadcrumb-panel {
+    color: #333333;
+    height: 2.8em;
+    min-height: 2.8em; } }
+/*******************************************************************************
+  custom
+*******************************************************************************/
+#title-panel {
+  border-bottom: 2px solid rgba(36, 93, 56, 0.25); }
+
+a.breadcrumbButton:hover
+, a.breadcrumbButton:focus {
+  text-decoration: underline; }
+
+.breadcrumb-separator:before {
+  color: #ccc;
+  content: "/"; }
+
+.breadcrumbButton.leaf-breadcrumb {
+  color: #737373; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #breadcrumb-panel {
+    height: 2.8em;
+    min-height: 2.8em; }
+
+  #breadcrumbPageTitle {
+    line-height: 2.8em; }
+
+  .breadcrumb-separator:before {
+    display: none; } }
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-menu.css
+*******************************************************************************/
+#menu {
+  font-family: stratum-1-web, proxima-nova-soft, arial, sans-serif;
+  font-size: 16px; }
+
+#menu ul > li {
+  position: relative;
+  border-bottom-color: rgba(36, 93, 56, 0.5); }
+
+.menu-item {
+  height: auto;
+  padding: 0;
+  line-height: 2.5em; }
+
+#menu .menu-text {
+  display: block;
+  padding-right: 2em; }
+
+#menu .menu-text
+, #menu .menu-subheader-text {
+  letter-spacing: 2px;
+  color: #333333;
+  font-family: stratum-1-web, proxima-nova-soft, arial, sans-serif;
+  font-size: 14px; }
+
+#menu .menu-subheader-text {
+  margin-left: 0;
+  padding-left: 2em;
+  padding-right: .5em; }
+
+#menu ul li:hover
+, #menu ul li:focus {
+  background-color: rgba(36, 93, 56, 0.25);
+  outline: 0; }
+
+#menu .menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 2em;
+  height: 2.5em;
+  float: none;
+  margin-right: 0;
+  display: block; }
+
+#menu .menu-back-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2em;
+  height: 2.5em;
+  float: none; }
+
+#menu .menu-icon
+, #menu .menu-back-icon {
+  background-size: .5em 1em;
+  width: 2em;
+  height: 2.5em; }
+
+.menu-wrapper a:link
+, .menu-wrapper a:visited
+, .menu-wrapper a:hover
+, .menu-wrapper a:active {
+  color: #456c88; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #menu .menu-back-icon
+  , #menu .menu-icon {
+    background-size: .5em 1em;
+    width: 2em;
+    height: 2.5em;
+    padding-top: 0; } }
+/*******************************************************************************
+  custom
+*******************************************************************************/
+#menu .menu-text span {
+  padding-left: .5em; }
+
+#menu ul li:focus {
+  background-color: rgba(204, 204, 204, 0.25); }
+
+.menu-wrapper .menu-subheader-text a:link
+, .menu-wrapper .menu-subheader-text a:visited
+, .menu-wrapper .menu-subheader-text a:hover
+, .menu-wrapper .menu-subheader-text a:active {
+  color: #333333; }
+
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-tools.css
+*******************************************************************************/
+#header-main-section #toolsCanvas {
+  background-color: white; }
+
+#header-main-section #toolsCanvas div span {
+  padding: 0;
+  letter-spacing: 1.5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#toolsCanvas .canvas-item {
+  padding: 0;
+  border: 0; }
+
+#toolsCanvas .canvas-section {
+  padding: 0; }
+
+#toolsList .canvas-section {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: rgba(204, 204, 204, 0.5);
+  border-bottom-color: rgba(204, 204, 204, 0.4);
+  padding: 0;
+  margin: 0; }
+
+#toolsList .canvas-item {
+  font: 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: white;
+  border-bottom-color: rgba(204, 204, 204, 0.4);
+  padding: 0; }
+
+#toolsList .canvas-item:hover
+, #toolsList .canvas-item:focus {
+  background-color: rgba(36, 93, 56, 0.25); }
+
+#toolsList #mepDescForMobile {
+  background-color: white; }
+
+/*******************************************************************************
+  custom
+*******************************************************************************/
+#header-main-section #toolsCanvas .canvas-section span {
+  display: block;
+  padding: .75em; }
+
+#header-main-section #toolsList .canvas-item span {
+  display: block;
+  padding: .75em .75em .75em 2em; }
+
+#toolsList .canvas-item:focus {
+  background-color: rgba(204, 204, 204, 0.25);
+  outline: 0; }
+
+/*******************************************************************************
+  plugin: sghe_aurora
+  file: web-app/css/aurora-profile.css
+*******************************************************************************/
+#header-main-section #userCanvas {
+  background-color: white; }
+
+#header-main-section #userCanvas div span {
+  padding: 0;
+  letter-spacing: 1.5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+#userCanvas .canvas-section {
+  padding: 0; }
+
+#userCanvas .canvas-item {
+  border-top-color: rgba(204, 204, 204, 0.4);
+  padding: 0; }
+
+#userList .canvas-section {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: rgba(204, 204, 204, 0.5);
+  border-bottom-color: rgba(204, 204, 204, 0.4);
+  padding: 0;
+  margin: 0; }
+
+#userList .canvas-item {
+  font: 1em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: white;
+  border-bottom-color: rgba(204, 204, 204, 0.4);
+  padding: 0; }
+
+#userList .canvas-item:hover
+, #userList .canvas-item:focus {
+  background-color: rgba(36, 93, 56, 0.25); }
+
+#userList #usernameForMobile {
+  background-color: white; }
+
+/*******************************************************************************
+  custom
+*******************************************************************************/
+#header-main-section #userCanvas .canvas-section span {
+  display: block;
+  padding: .75em; }
+
+#header-main-section #userList .canvas-item span {
+  display: block;
+  padding: .75em .75em .75em 2em; }
+
+#userList .canvas-item:focus {
+  background-color: rgba(204, 204, 204, 0.25);
+  outline: 0; }
+
+/*******************************************************************************
+  plugin: web-app-extensibility
+  file: web-app/css/extensibility-ss.css
+*******************************************************************************/
+.xe-extensions-editor {
+  border-color: #cccccc;
+  border-radius: 4px;
+  z-index: 500 !important; }
+
+#extensions-edit-input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 1em;
+  outline: none; }
+
+div.ui-dialog.ui-widget.ui-widget-content.ui-corner-all.xe-extensions-editor.ui-draggable.ui-resizable > div.ui-dialog-titlebar.ui-widget-header.ui-corner-all.ui-helper-clearfix {
+  height: 39px;
+  font-family: stratum-1-web, proxima-nova-soft, arial, sans-serif;
+  font-size: 18px;
+  background: #696158; }
+
+.xe-extensions-editor.ui-corner-all {
+  border-radius: 4px; }
+
+/*******************************************************************************
+  custom
+*******************************************************************************/
+div.ui-widget.xe-extensions-editor .ui-dialog-content {
+  border-bottom: 1px solid #cccccc; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .xe-extensions-editor {
+    width: 100% !important;
+    left: 0 !important;
+    top: 25% !important; } }
+/******************************************************************************
+  custom
+******************************************************************************/
+#myUVUWrapper {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#myUVULink {
+  color: white;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  font-size: 14px; }
+
+/******************************************************************************
+	plugin: sghe_aurora
+	file: web-app/css/common-platform.css
+******************************************************************************/
+#content {
+  font-family: arial, helvetica;
+  font-size: 16px;
+  background-color: white; }
+
+#innerContent {
+  margin: 0;
+  padding: 15px;
+  background-color: white; }
+
+/******************************************************************************
+	Custom
+******************************************************************************/
+#pageWrapper.content-only #content {
+  top: 0px;
+  bottom: 0px; }
+#pageWrapper.content-only #innerContent {
+  padding-top: 1em;
+  padding-bottom: 1em; }
+#pageWrapper.content-only #header-main-section {
+  display: none; }
+#pageWrapper.content-only #banner8Footer .footerlinksdiv,
+#pageWrapper.content-only #banner8Footer a {
+  display: none; }
+#pageWrapper.content-only #outerFooter {
+  display: none; }
+
+/******************************************************************************
+	plugin: sghe_aurora
+	file: web-app/css/aurora-breadcrumb.css
+******************************************************************************/
+#title-panel h1 {
+  float: left; }
+
+/******************************************************************************
+	Custom
+******************************************************************************/
+#title-panel-subheaders {
+  float: right;
+  padding: 12px;
+  font-size: 14px; }
+
+.clearfix {
+  clear: both; }
+
+/******************************************************************************
+  Custom
+******************************************************************************/
+#banner8Footer {
+  margin: 15px;
+  border-top: solid 2px #245d38;
+  padding-top: 15px; }
+
+#myUVUWrapper {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#myUVULink {
+  color: white;
+  display: block;
+  height: 42px;
+  line-height: 42px;
+  padding-left: .5em;
+  padding-right: .5em;
+  font-size: 16px; }
+
+/******************************************************************************
+	plugin: sghe_aurora
+	file: web-app/css/aurora-breadcrumb.css
+******************************************************************************/
+#breadcrumb-panel.empty-panel {
+  display: none; }
+
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  #breadcrumb-panel.empty-panel {
+    display: block; } }
+/******************************************************************************
+  Custom Search box
+******************************************************************************/
+#header-main-section-east-part #searchDiv {
+  float: left;
+  border-left: none;
+  position: relative; }
+
+#search {
+  background: url("images/icons/search.svg") center center no-repeat;
+  height: inherit;
+  width: 2.375em;
+  display: block;
+  text-align: center; }
+
+#header-main-section #searchCanvas {
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  padding: 0px;
+  margin: 0px;
+  right: 0;
+  left: auto;
+  height: auto;
+  width: auto;
+  white-space: nowrap; }
+
+#header-main-section #searchCanvas div {
+  height: auto; }
+
+#header-main-section #searchCanvas div span {
+  padding: 0;
+  letter-spacing: 1.5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  display: block; }
+
+#searchCanvas {
+  box-shadow: 0 1px 1px #000;
+  display: none; }
+
+#searchCanvas form {
+  margin: 2em; }
+
+#searchCanvas.search-active {
+  display: block; }
+
+#header-main-section-east-part #searchDiv #search.search-expanded:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto auto;
+  width: 0px;
+  border-bottom: 9px solid white;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent; }
+
+@media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+  #header-main-section #searchCanvas {
+    width: 100%;
+    position: fixed; }
+
+  #header-main-section #searchCanvas div {
+    width: 100%; } }
+/******************************************************************************
+	banner_web_tailor theme custom styles
+******************************************************************************/
+a {
+  color: #456c88; }
+
+u8-menu {
+  float: left;
+  height: inherit;
+  width: 3.5em;
+  background-color: #2b6f43; }
+
+#back_url_wrapper {
+  z-index: 200;
+  position: absolute;
+  top: 3.4em;
+  right: 1em;
+  font-size: 16px;
+  line-height: 2.8em; }
+
+#pageWrapper.content-only #back_url_wrapper {
+  display: none; }
+
+#back_url_wrapper a {
+  text-decoration: none; }
+
+#ssbbackurl {
+  text-transform: capitalize;
+  color: #456c88; }
+
+@media only screen and (min-height: 1000px) {
+  #back_url_wrapper {
+    top: 4.3em; } }
+@media only screen and (min-height: 1200px) {
+  #back_url_wrapper {
+    top: 5.2em; } }
+@media only screen and (min-height: 1400px) {
+  #back_url_wrapper {
+    top: 6em; } }
+@media only screen and (min-height: 1600px) {
+  #back_url_wrapper {
+    top: 6.9em; } }

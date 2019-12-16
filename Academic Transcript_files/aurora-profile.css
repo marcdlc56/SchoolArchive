@@ -1,0 +1,111 @@
+/** *****************************************************************************
+ Copyright 2015 Ellucian Company L.P. and its affiliates.
+ ****************************************************************************** */
+#header-main-section #userCanvas {
+    position: absolute;
+    z-index: 1000;
+    padding: 0px;
+    margin: 0px;
+    right:0;
+    left: auto;
+    height: auto;
+    width: auto;
+    white-space: nowrap;
+
+}
+
+#header-main-section #userCanvas div{
+    height : auto;
+}
+
+#header-main-section #userCanvas div span{
+    padding-left: 0.5em;
+    letter-spacing: 2px;
+    font-family: "Open Sans";
+    font-size: 1em;
+    display: block;
+    padding-bottom: 0.5em;
+}
+
+#userCanvas {
+    box-shadow: 0 1px 1px #000;
+    display: none;
+}
+
+#userCanvas .canvas-section{
+    padding-bottom: .5em;
+}
+
+#userCanvas .canvas-item {
+    border-top: 1px solid #d0dbde;
+    padding-right: 5em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+
+}
+
+#userCanvas.user-active {
+    display:block;
+}
+
+#userList .canvas-section {
+    font-weight: bold;
+    font: 1em Open sans;
+    color: #41566f;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #d0dbde;
+    padding: 0;
+    margin: 0;
+    width: inherit;
+    padding-top: .5em;
+
+}
+
+#userList .canvas-item {
+    font: .875em Open sans;
+    color: #41566f;
+    border-bottom: 1px solid #d0dbde;
+    padding-left: 2em;
+}
+
+#userList .canvas-item:hover, #userList .canvas-item:focus {
+    background-color: #F3FCFF;
+}
+
+#header-main-section-east-part #userDiv #user.user-expanded:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto auto;
+    width: 0px;
+    border-bottom: 9px solid #ffffff;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+
+
+#userList #usernameForMobile {
+    display: none;
+    background-color: #CCCCCC;
+}
+
+@media (min-width:0px) and (max-width:767px) {
+    #userList #usernameForMobile {
+        display: inline-block;
+    }
+}
+
+@media (min-width:0px) and (max-width:767px) and (orientation : portrait)	{
+    #header-main-section #userCanvas{
+        width : 100%;
+        position: fixed;
+    }
+    #header-main-section #userCanvas div{
+        width : 100%;
+    }
+}
+
+@media (min-width:768px) and (max-width:1023px)	{ }
+

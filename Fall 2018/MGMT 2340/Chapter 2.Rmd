@@ -1,0 +1,104 @@
+---
+title: "Chapter 2"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Ctrl+Shift+Enter*. 
+
+
+
+
+Load the Weather data and the jmv package
+
+```{r}
+jmv::descriptives(
+    data = Weather,
+    vars = "Weather2010",
+    freq = TRUE)
+
+
+```
+
+
+Load Marital Status 
+
+```{r}
+pie(Marital_Status$'1960', labels = Marital_Status$'Marital Status', main = "Marital Status, 1960")
+```
+
+
+
+BarChart
+
+Load ggplot
+
+
+```{r}
+Marital1 <- read.table(
+    header=TRUE, text='Year        Marital Percent
+    1   `1960`       Married      .71
+    2  `2010`       Married      .52
+    3  `1960` Single      .15
+    4   `2010` Single      .28
+    5   `1960`     Divorced       .05
+    6  `2010`     Divorced       .14
+    7   `1960`       Widowed      .09
+    8  `2010`       Widowed     .06')
+
+ggplot(Marital1, aes(reorder(factor(Marital),-Percent), Percent, fill = Year)) + 
+    geom_bar(stat="identity", position = "dodge") + 
+    scale_fill_brewer(palette = "Set1")
+```
+
+
+Histogram
+
+```{r}
+hist(MV_Houses$'House Price', breaks = 5, main = "Histogram", xlab = "House Prices (in $1,000s)")
+```
+
+
+
+Polygon
+
+```{r}
+plot(Polygon$'y' ~ Polygon$'x', ylab="Relative Frequency", xlab="House Prices (in $1,000s)")
+
+lines(Polygon$'y' ~ Polygon$'x')
+```
+
+
+Ogive
+
+```{r}
+plot(Ogive$'y' ~ Ogive$'x',  ylab="Relative Frequency", xlab="House Prices (in $1,000s)")
+
+lines(Ogive$'y' ~ Ogive$'x')
+```
+
+Stem and leaf
+
+```{r}
+stem(Wealthiest_People$Age, scale = 2)
+```
+
+
+Scatterplot
+```{r}
+plot(Edu_Inc$'Income' ~ Edu_Inc$'Education', ylab = "Income", xlab = "Education")
+```
+
+
+
+
+
+
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
